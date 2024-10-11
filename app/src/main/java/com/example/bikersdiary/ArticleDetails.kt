@@ -9,7 +9,7 @@ class ArticleDetails : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.ArticleDetailsActivity)
+        setContentView(R.layout.article_details_activity)
 
         // Get data from intent using safe calls and default values
         val title = intent.getStringExtra("title") ?: ""
