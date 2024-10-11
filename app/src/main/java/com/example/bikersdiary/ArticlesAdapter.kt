@@ -25,6 +25,8 @@ class ArticlesAdapter(val articles:List<Article>):RecyclerView.Adapter<ArticleVi
             val article=articles.get(position)
             holder.title.text=article.title
             holder.image.setImageResource(article.image)
+            holder.date.text=article.date
+            holder.details.text=article.details
             holder.itemView.setOnClickListener{
 //                val intent= Intent(holder.itemView.context,ArticleDetailsActivity::class.java)
 //                intent.putExtra("title",article.title)
