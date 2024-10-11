@@ -28,12 +28,12 @@ class ArticlesAdapter(val articles:List<Article>):RecyclerView.Adapter<ArticleVi
             holder.date.text=article.date
             holder.details.text=article.details
             holder.itemView.setOnClickListener{
-//                val intent= Intent(holder.itemView.context,ArticleDetailsActivity::class.java)
-//                intent.putExtra("title",article.title)
-//                intent.putExtra("image",article.image)
-//                intent.putExtra("date",article.date)
-//                intent.putExtra("details",article.details)
-//                holder.itemView.context.startActivity(intent)
+                val intent= Intent(holder.itemView.context,ArticleDetails::class.java)
+                intent.putExtra("title",article.title)
+                intent.putExtra("image",article.image)
+                intent.putExtra("date",article.date)
+                intent.putExtra("details",article.details)
+                holder.itemView.context.startActivity(intent)
             }
         }
     }
